@@ -1,15 +1,25 @@
 .triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 6rem solid transparent;
-  border-right: 6rem solid transparent;
-  border-bottom: 4.5rem solid #ff9100;
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+    border-bottom: 4.5rem solid #ff9100;
 }
 
 .rectangle {
-  height: 6.5rem;
-  width: 10rem;
-  margin: 0 1rem;
-  background-color: #ff9100;
+    height: 6.5rem;
+    width: 10rem;
+    margin: 0 1rem;
+    background-color: #ff9100;
 }
+
+.chimney {
+    height: 6.5rem;
+    width: 1.5rem;
+    position: absolute;
+    left: -4rem;
+    top: .5rem;
+    background-color: #ff9100;
+  }
 
