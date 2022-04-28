@@ -59,3 +59,22 @@ body {
     background-color: #001525;
 }
 
+.window-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 3.25rem;
+    align-content: flex-start;
+}
+  
+.box {
+    flex: 0 0 10px;
+    width: 5px;
+    padding: 5px;
+    background-color: #001525;  
+    margin: 5px;
+}
+  
+* {
+    box-sizing: border-box;
+}
