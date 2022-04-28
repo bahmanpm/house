@@ -1,3 +1,7 @@
+body {
+    background-color: #001525;
+}
+  
 .triangle-up {
     width: 0;
     height: 0;
@@ -21,5 +25,37 @@
     left: -4rem;
     top: .5rem;
     background-color: #ff9100;
-  }
+}
+
+.window-wrapper, .door-wrapper {
+    display: flex;
+    height: 3.25rem;
+}
+  
+.door-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.door-wrapper > div {
+    position: relative;
+    background-color: #e36414;
+    width: 2rem;
+    height: 3rem;
+}
+  
+.door-wrapper > div:after {
+    content: '';
+    width: .3rem;
+    height: .3rem;
+    position: absolute;
+    left:.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #001525;
+}
 
