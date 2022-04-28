@@ -1,7 +1,18 @@
+/* General */
 body {
     background-color: #001525;
 }
   
+* {
+    box-sizing: border-box;
+}
+
+.window-wrapper, .door-wrapper {
+    display: flex;
+    height: 2.75rem;
+}
+
+/* Wall */
 .triangle-up {
     width: 0;
     height: 0;
@@ -11,15 +22,17 @@ body {
     border-bottom: 4.5rem solid #ff9100;
 }
 
+/* Roof */
 .rectangle {
     height: 6.5rem;
     width: 10rem;
     margin: 0 1rem;
+    padding: 1rem;
     background-color: #ff9100;
 }
 
 .chimney {
-    height: 6.5rem;
+    height: 3.5rem;
     width: 1.5rem;
     position: absolute;
     left: -4rem;
@@ -27,11 +40,7 @@ body {
     background-color: #ff9100;
 }
 
-.window-wrapper, .door-wrapper {
-    display: flex;
-    height: 3.25rem;
-}
-  
+/* Door */
 .door-wrapper {
     display: flex;
     justify-content: center;
@@ -59,22 +68,17 @@ body {
     background-color: #001525;
 }
 
+/* Window */
 .window-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 3.25rem;
     align-content: flex-start;
 }
   
 .box {
-    flex: 0 0 10px;
-    width: 5px;
-    padding: 5px;
-    background-color: #001525;  
-    margin: 5px;
-}
-  
-* {
-    box-sizing: border-box;
+    flex: 0 0 1rem;
+    width: 1rem;
+    background-color: #001525;
+    margin: 2px;
 }
